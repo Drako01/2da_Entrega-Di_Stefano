@@ -188,8 +188,7 @@ ul a:hover {
     padding: 1%;
 }
 
-.vuelos_aeropuerto,
-.wrapper_disney {
+.vuelos_aeropuerto {
     display: flex;
     justify-content: space-around;
 }
@@ -259,9 +258,10 @@ ul a:hover {
 }
 
 .wrapper_disney {
-    margin: 5%;
+    display: flex;
+    flex-direction: row;
     padding: 1%;
-    align-items: center;
+    justify-content: center;
 }
 
 .wrapper_disney_01 {
@@ -406,6 +406,7 @@ ul a:hover {
 .box__04_img {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box__04_img img {
@@ -628,13 +629,32 @@ footer {
         align-items: center;
     }
 
-    .wrapper {
-        display: flex;
-        margin: 5%;
+    .wrapper__paquetes {
+        align-items: center;
+        flex-direction: column;
     }
 
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper_vertical__01 {
+        flex-direction: column;
+    }
+
+    article{
+        margin: 0 5% ;
+    }    
+
     .box1,
-    .box2 {
+    .box2,
+    .box__03,
+    .box__04 {
+        width: 100%;
+    }
+
+    .paquetes__box {
         width: 100%;
     }
 
@@ -652,6 +672,23 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+
+@media (max-width:992px) {
+    .row_entradas_disney {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .marca, .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        align-items: center;
     }
 }
 
