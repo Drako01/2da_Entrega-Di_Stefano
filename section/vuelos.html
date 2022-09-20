@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web | CODERHOUSE</title>
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure class="marca">
+                <img src="../img/marca.png" alt="Viajemos.com">
+            </figure>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="vuelos.html">Vuelos</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="disney.html">Disney</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <main>
+
+        <section class="wrapper">
+            <div class="box1">
+                <aside>
+                    <form class="row-cols-auto vuelos_formulario">
+                        <h4>Vuelos</h4>
+                        <div class="col-md-9">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label for="">Ida y Vuelta</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Ida</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Vuelta</label>
+                        </div>
+                        <div class="col-md-12 origenes">
+                            <input type="text" class="form-control" placeholder="Seleccione Origen"><i
+                                class='bx bx-map'></i>
+                        </div>
+                        <div class="col-md-12 origenes">
+                            <input type="text" class="form-control" placeholder="Seleccione Destino"><i
+                                class='bx bx-map'></i>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <select name="pasajeros" id="pasajeros" class="form-select">
+                                <option value="" disabled selected>Pasajeros: </option>
+                                <option value="Pasajeros">1</option>
+                                <option value="Pasajeros">2</option>
+                                <option value="Pasajeros">3</option>
+                                <option value="Pasajeros">4</option>
+                            </select>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Todavía no he decidido la
+                                fecha</label>
+                        </div>
+                        <div class="col-md-12 ">
+                            <button class="btn btn-success boton vuelos" type="submit">Buscar</button>
+                        </div>
+                    </form>
+                </aside>
+                <aside class="aside__box_1">
+                    <div class="line2"></div>
+                    <h5>Escalas</h5>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Todas</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label for="">1 Escala</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">2 o más Escalas</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                </aside>
+                <aside class="aside__box_1">
+                    <div class="line2"></div>
+                    <h5>Equipaje</h5>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label for="">Todas las Opciones</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">De mano</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Para despachar</label>
+                        </div>
+                        <div class="escalas"><input type="number" name="" id=""></div>
+                    </div>
+                </aside>
+                <aside class="aside__box_1">
+                    <div class="line2"></div>
+                    <h5>Precio</h5>
+                    <div class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Moneda $
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                    </div>
+                    <div class="box_01_escalas">
+                        <div>$200.000</div>
+                        <div>$360.000</div>
+                    </div>
+                    <label for="customRange1" class="form-label"></label>
+                    <input type="range" class="form-range" id="customRange1">
+                </aside>
+                <aside class="aside__box_1">
+                    <div class="line2"></div>
+                    <h5>Aerolineas</h5>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                <label for="">Todas las Opciones</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="152"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Aerolíneas Argentinas</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="19"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Aeroméxico</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="11"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Air Canada</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="2"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                            <label for="">American Airlines</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="4"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Avianca Airlines</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="1"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Copa Airlines</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="18"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">Delta Air Lines</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="12"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">LATAM</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="42"></div>
+                    </div>
+                    <div class="col-md-9 box_01_escalas">
+                        <div><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label for="">United Airlines</label>
+                        </div>
+                        <div class="escalas"><input type="number" value="77"></div>
+                    </div>
+                </aside>
+            </div>
+            <section class="box2">
+
+                <article class="panel_vuelos">
+                    <div class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Con esta combinación obtenés más opciones de viaje</label>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Jueves 15 Sept. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Martes 20 Oct. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">00:15</div>
+                                <div class="vuelos_aeropuerto__item">20:05</div>
+                                <div class="vuelos_aeropuerto__item">(19:55 Hr)</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 347.126.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>8,8</h5>
+                                </div>
+                                <div>
+                                    <h6>Excelente</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </div>
+                </article>
+                <article class="panel_vuelos">
+                    <section class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Con esta combinación obtenés más opciones de viaje</label>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Jueves 15 Sept. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Martes 20 Oct. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">00:15</div>
+                                <div class="vuelos_aeropuerto__item">20:05</div>
+                                <div class="vuelos_aeropuerto__item">(19:55 Hr)</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 351.227.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>7,6</h5>
+                                </div>
+                                <div>
+                                    <h6>Muy Bueno</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </section>
+                </article>
+                <article class="panel_vuelos">
+                    <section class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Con esta combinación obtenés más opciones de viaje</label>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Jueves 15 Sept. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Martes 20 Oct. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">00:15</div>
+                                <div class="vuelos_aeropuerto__item">20:05</div>
+                                <div class="vuelos_aeropuerto__item">(19:55 Hr)</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 355.233.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>7,4</h5>
+                                </div>
+                                <div>
+                                    <h6>Muy Bueno</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </section>
+                </article>
+                <article class="panel_vuelos">
+                    <section class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Con esta combinación obtenés más opciones de viaje</label>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Jueves 15 Sept. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">IDA</div>
+                                <div class="vuelos_aeropuerto__item">EZE</div>
+                                <div class="vuelos_aeropuerto__item">MCO</div>
+                                <div class="vuelos_aeropuerto__item">Equipaje</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">Martes 20 Oct. 2022</div>
+                                <div class="vuelos_aeropuerto__item">Orlando</div>
+                                <div class="vuelos_aeropuerto__item">Buenos Aires</div>
+                                <div class="vuelos_aeropuerto__item">
+                                    <img src="/img/valijas.png" alt="">
+                                </div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">00:15</div>
+                                <div class="vuelos_aeropuerto__item">20:05</div>
+                                <div class="vuelos_aeropuerto__item">(19:55 Hr)</div>
+                            </div>
+                            <div class="vuelos_aeropuerto">
+                                <div class="vuelos_aeropuerto__item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            American Airlines
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="vuelos_aeropuerto__item">23:15</div>
+                                <div class="vuelos_aeropuerto__item">19:15</div>
+                                <div class="vuelos_aeropuerto__item">(20 Hr)</div>
+                            </div>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 361.228.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>7,1</h5>
+                                </div>
+                                <div>
+                                    <h6>Muy Bueno</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </section>
+                </article>
+
+            </section>
+        </section>
+        <div class="line3"></div>
+        <div class="_paralax_ fly_page"></div>
+        <div class="line3"></div>
+        <section>
+            <div class="wrapper">
+                <h2>Elegí el mejor vuelo para tu próxima aventura</h2>
+            </div>
+            <article class="wrapper">
+                <section class="textos_finales">
+                    <h5>¿Por qué comprar tu vuelo en Viajemos.com?</h5>
+                    <p>En Viajemos.com podés comprar tus pasajes aéreos al mejor precio y con la mejor financiación.
+                        Conseguí
+                        vuelos baratos para viajar donde quieras y hacé que el cielo sea tu límite. Hay una gran
+                        variedad de
+                        pasajes de avión, aerolíneas y destinos para que elijas el que más te conviene. Encontrá los
+                        mejores
+                        vuelos y ¡preparate para viajar!</p>
+                </section>
+                <section class="textos_finales">
+                    <h5>¿Qué tenés que saber sobre el equipaje?</h5>
+                    <p>Algunas aerolíneas ofrecen tarifas de pasajes de avión muy bajas, pero que solo incluyen equipaje
+                        de
+                        mano. Antes de seleccionar tu vuelo, chequeá toda la información de equipaje incluido, para
+                        saber
+                        cuántas valijas podés llevar. Recordá que en Viajemos.com te brindamos diferentes opciones de
+                        servicios
+                        para que tengas una excelente experiencia de vuelo.</p>
+                </section>
+                <section class="textos_finales">
+                    <h5>¿Dónde ver toda la información de un vuelo?</h5>
+                    <p>Al hacer una búsqueda de vuelos, podés ver información de los horarios de salida y llegada de
+                        cada
+                        uno,
+                        además de los aeropuertos, la duración del viaje, el número y tiempo de escalas, la clase de
+                        cabina
+                        y el
+                        equipaje incluido. Conocé también el precio final de tus pasajes aéreos y las formas de pago y
+                        financiación disponibles.</p>
+                </section>
+                <section class="textos_finales">
+                    <h5>Tips para comprar un vuelo</h5>
+                    <p>Cuando busques tus pasajes aéreos, tené en cuenta el aeropuerto del cual sale y al cual llega, la
+                        relación precio/duración del vuelo, y el equipaje incluido en tu tarifa. Algunos vuelos baratos
+                        pueden
+                        tener muchas escalas y no incluir equipaje. Si tu vuelo tiene escalas, chequeá si implica un
+                        cambio
+                        de
+                        aeropuerto.</p>
+                </section>
+            </article>
+        </section>
+        <section class="wrapper_vertical">
+            <h3>Vuelos baratos en <b>Viajemos.com</b></h3>
+            <article class="wrapper_vertical__02">
+                <p>Conseguí los vuelos baratos que necesitás para tu próximo viaje junto a <b>Viajemos.com</b>.
+                    Preparate
+                    para
+                    encontrar miles de ofertas de pasajes aéreos con solo un par de clics. Acá vas a descubrir la mayor
+                    variedad de vuelos de las aerolíneas más importantes del mercado, con más de 250 empresas de
+                    transporte
+                    aéreo a tu disposición. Desde esta plataforma vas a poder comprar vuelos baratos hacia cualquier
+                    lugar
+                    del planeta y comparar tarifas, no solo de las distintas aerolíneas, sino también por fecha, viendo
+                    en
+                    qué momento podés adquirir los pasajes de avión más económicos. Cuando comprés en
+                    <b>Viajemos.com</b>
+                    vas a
+                    encontrar muchas ofertas, especialmente al combinar tus pasajes aéreos con reservas de hoteles y
+                    alquiler de autos. Además uno de los aspectos más convenientes de comprar tus vuelos por esta
+                    plataforma
+                    es que vas a poder pagar todos tus productos en varias cuotas y lo podés hacer en diversas formas de
+                    pago. En resumen, la posibilidad de comparar los diferentes precios entre una gran variedad de
+                    aerolíneas, descubrir cuál es el mejor momento para viajar, contar con promociones especiales,
+                    comprar
+                    el vuelo que buscás y mucho más lo podés hacer acá mismo. ¡Reservá ya tus vuelos baratos en
+                    <b>Viajemos.com</b>!
+                </p>
+            </article>
+        </section>
+        <section class="wrapper_vertical">
+            <h3>Ofertas exclusivas en tu email</h3>
+            <article>
+                <div class="mb-3 wrapper_vertical__01">
+                    <div><i class='bx bx-mail-send'></i></div>
+                    <div><input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Ingresa tu email"></div>
+                    <div class="col-12">
+                        <button class="btn btn-success boton ofertas_paquetes" type="submit">¡Quiero
+                            recibirlas!</button>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <p>Recibirás emails promocionales de <b>Viajemos.com</b> Para más información consultá las políticas de
+                    privacidad.
+                </p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div class="flex_box__content_evenly contactame">
+            <div class="contactame_iconos_social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bx-mail-send'></i>
+            </div>
+            <div class="contactame_listado">
+                <ul>
+                    <li>contacto@viajemos.com <i class='bx bx-mail-send'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bxl-whatsapp'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bx-phone'></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="titulo-final">
+            <p>
+                &copy; 2022 - Copyright by Alejandro Di Stefano &#xae; - Todos los derechos Reservados
+            </p>
+            <p>
+                Desarrollo Web - CODERHOUSE
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

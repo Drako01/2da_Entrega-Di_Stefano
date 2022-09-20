@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web | CODERHOUSE</title>
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure class="marca">
+                <img src="../img/marca.png" alt="Viajemos.com">                
+            </figure>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="vuelos.html">Vuelos</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="disney.html">Disney</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <main>
+        <section class="bienvenido">
+            <h1>Formulario de Contacto</h1>
+            <form class="row g-3 formulario">
+                <div class="col-md-8">
+                    <label for="validationDefault01" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="validationDefault01">
+                </div>
+                <div class="col-md-4">
+                    <label for="validationDefault02" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="validationDefault02">
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault03" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="validationDefault03">
+                </div>
+                <div class="col-md-3">
+                    <label for="validationDefault05" class="form-label">Código Postal</label>
+                    <input type="text" class="form-control" id="validationDefault05">
+                </div>
+                <div class="col-md-3">
+                    <label for="validationDefault04" class="form-label">Provincia</label>
+                    <select class="form-select" id="validationDefault04">
+                        <option selected disabled value="">Seleccione...</option>
+                        <option>CABA</option>
+                        <option>Buenos Aires</option>
+                        <option>Córdoba</option>
+                        <option>Santa Fé</option>
+                        <option>La Pampa</option>
+                        <option>Neuquen</option>
+                        <option>Entre Ríos</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Escribinos tu Consulta</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked>
+                        <label class="form-check-label" for="invalidCheck2">
+                            Estoy de Acuerdo con los Términos y Condiciones
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success boton" type="submit">Aceptar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex_box__content_evenly contactame">
+            <div class="contactame_iconos_social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bx-mail-send'></i>
+            </div>
+            <div class="contactame_listado">
+                <ul>
+                    <li>contacto@viajemos.com <i class='bx bx-mail-send'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bxl-whatsapp'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bx-phone'></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="titulo-final">
+            <p>
+                &copy; 2022 - Copyright by Alejandro Di Stefano &#xae; - Todos los derechos Reservados
+            </p>
+            <p>
+                Desarrollo Web - CODERHOUSE
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

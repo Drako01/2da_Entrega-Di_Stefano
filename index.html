@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web | CODERHOUSE</title>
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure class="marca">
+                <img src="../img/marca.png" alt="Viajemos.com">
+            </figure>
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./section/vuelos.html">Vuelos</a></li>
+                <li><a href="./section/paquetes.html">Paquetes</a></li>
+                <li><a href="./section/disney.html">Disney</a></li>
+                <li><a href="./section/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <main>
+
+
+        <section class="bienvenido">
+            <h1>Alojamientos</h1>
+            <form class="row g-3 bienvenido_formulario">
+                <div class="col-md-6">
+                    <i class='bx bx-map'></i><label for="exampleFormControlInput1" class="form-label">DESTINO</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingresá una ciudad, alojamiento o punto de interés">
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleFormControlInput1" class="form-label">FECHA ENTRADA:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleFormControlInput1" class="form-label">FECHA SALIDA:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <label for="exampleFormControlInput1" class="form-label">HABITACIONES:</label>
+                    <input type="number" value="1" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <label for="exampleFormControlInput1" class="form-label">PASAJEROS:</label>
+                    <input type="number" value="2" class="form-control">
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Todavía no he decidido la fecha</label>
+                </div>
+            </form>
+            <article class="bienvenido_busqueda_rapida">
+                <section class="bienvenido_busqueda_rapida_01">
+                    <h3>
+                        Recientemente buscaste
+                    </h3>
+                    <section class="flex_box__content_between">
+                        <figure class="bienvenido__box_small">
+                            <img src="../img/orlando01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>ALOJAMIENTOS</h5>
+                                <h5>Orlando</h5>
+                            </div>
+                        </figure>
+                        <figure class="bienvenido__box_small">
+                            <img src="../img/disney01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>ACTIVIDADES</h5>
+                                <h5>Entradas a Parques Disney</h5>
+                            </div>
+                        </figure>
+                    </section>
+                </section>
+            </article>
+            <div class="_paralax_ index_page"></div>
+            <article class="bienvenido_busqueda_rapida">
+                <section class="bienvenido_busqueda_rapida_01">
+                    <h3>
+                        El tipo de alojamiento dice mucho sobre el viaje
+                    </h3>
+                    <section class="flex_box__content_evenly bienvenido_busqueda_rapida_box">
+                        <figure class="bienvenido__box_small_01 caja01">
+                            <img src="../img/hotel01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>Hoteles</h5>
+                            </div>
+                        </figure>
+                        <figure class="bienvenido__box_small_01 caja02">
+                            <img src="../img/resorts01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>Resorts</h5>
+                            </div>
+                        </figure>
+                        <figure class="bienvenido__box_small_01 caja03">
+                            <img src="../img/apart01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>Apart Hoteles</h5>
+                            </div>
+                        </figure>
+                        <figure class="bienvenido__box_small_01 caja04">
+                            <img src="../img/departamento01.jpg" alt="">
+                            <div class="bienvenido__box_small_text">
+                                <h5>Departamentos</h5>
+                            </div>
+                        </figure>
+                    </section>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="flex_box__content_evenly contactame">
+            <div class="contactame_iconos_social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bx-mail-send'></i>
+            </div>
+            <div class="contactame_listado">
+                <ul>
+                    <li>contacto@viajemos.com <i class='bx bx-mail-send'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bxl-whatsapp'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bx-phone'></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="titulo-final">
+            <p>
+                &copy; 2022 - Copyright by Alejandro Di Stefano &#xae; - Todos los derechos Reservados
+            </p>
+            <p>
+                Desarrollo Web - CODERHOUSE
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

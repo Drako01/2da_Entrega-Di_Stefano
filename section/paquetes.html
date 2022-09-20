@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web | CODERHOUSE</title>
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <figure class="marca">
+                <img src="../img/marca.png" alt="Viajemos.com">
+            </figure>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="vuelos.html">Vuelos</a></li>
+                <li><a href="paquetes.html">Paquetes</a></li>
+                <li><a href="disney.html">Disney</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="line"></div>
+    <main>
+
+        <section class="form_bienvenido">
+            <form class="row g-3 bienvenido_formulario">
+                <h4>Paquetes turísticos</h4>
+                <div class="col-md-3">
+                    <i class='bx bx-map'></i><label for="exampleFormControlInput1" class="form-label">ORIGEN</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingresá una ciudad, alojamiento o punto de interés">
+                </div>
+                <div class="col-md-3">
+                    <i class='bx bx-map'></i><label for="exampleFormControlInput1" class="form-label">DESTINO</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Ingresá una ciudad, alojamiento o punto de interés">
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleFormControlInput1" class="form-label">FECHA ENTRADA:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-2">
+                    <label for="exampleFormControlInput1" class="form-label">FECHA SALIDA:</label>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <label for="exampleFormControlInput1" class="form-label">HABITACIONES:</label>
+                    <input type="number" value="1" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <label for="exampleFormControlInput1" class="form-label">PASAJEROS:</label>
+                    <input type="number" value="2" class="form-control">
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Todavía no he decidido la fecha</label>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-success boton" type="submit">Buscar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="wrapper__paquetes">
+            <article class="box__03">
+                <h4>Top Hoteles más buscados hoy en Orlando</h4>
+                <section class="box__03_img">
+                    <figure> <img src="../img/melia.webp" alt="">
+                        <h6>Hotel Melia</h6>
+                    </figure>
+                    <figure><img src="../img/hollidayin.webp">
+                        <h6>Hotel Holliday In</h6>
+                    </figure>
+                    <figure><img src="../img/westgate.jpg" alt="">
+                        <h6>Hotel Westgate</h6>
+                    </figure>
+                    <figure><img src="../img/hotel01.jpg">
+                        <h6>Hotel Marriot</h6>
+                    </figure>
+                </section>
+
+            </article>
+            <article class="box__04">
+                <h4>Ofertas que no pueden esperar</h4>
+                <section class="paquetes__box">
+                    <figure class="paquetes__box_img">
+                        <img src="../img/pareja.webp" alt="">
+                    </figure>
+                    <div class="paquetes__box_text">
+                        <h6>Si aún no definiste tu destino, te puede interesar ver nuestra sección de ofertas.</h6>
+                        <div class="col-12">
+                            <button class="btn btn-success boton" type="submit">Ver Ofertas</button>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </section>
+
+        <section class="wrapper">
+            <aside class="box1">
+                <section>
+                    <form class="row-cols-auto vuelos_formulario">
+                        <h4>Hotel</h4>
+
+
+                        <div class="col-md-12">
+                            <input type="date" class="form-control">
+                        </div>
+                        <div class="col-md-12">
+                            <input type="date" class="form-control">
+                        </div>
+                        <section class="col-md-12">
+                            <select name="habitaciones" id="habitaciones" class="form-select">
+                                <option value="1" disabled selected>Habitaciones:</option>
+                                <option value="Habitaciones">1</option>
+                                <option value="Habitaciones">2</option>
+                                <option value="Habitaciones">3</option>
+                                <option value="Habitaciones">4</option>
+                            </select>
+                        </section>
+                        <section class="col-md-12">
+                            <select name="pasajeros" id="pasajeros" class="form-select">
+                                <option value="1" disabled selected>Pasajeros: </option>
+                                <option value="Pasajeros">1</option>
+                                <option value="Pasajeros">2</option>
+                                <option value="Pasajeros">3</option>
+                                <option value="Pasajeros">4</option>
+                            </select>
+                        </section>
+                        <section class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Todavía no he decidido la
+                                fecha</label>
+                        </section>
+                        <div class="col-md-12 ">
+                            <button class="btn btn-success boton vuelos" type="submit">Buscar</button>
+                        </div>
+                    </form>
+                </section>
+
+
+                <section class="aside__box_1">
+                    <div class="line2"></div>
+                    <h5>Precio</h5>
+                    <section class="form-check">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Moneda $
+                        </label>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                    </section>
+                    <section class="box_01_escalas">
+                        <div>$200.000</div>
+                        <div>$360.000</div>
+                    </section>
+                    <label for="customRange1" class="form-label"></label>
+                    <input type="range" class="form-range" id="customRange1">
+                </section>
+
+            </aside>
+            <section class="box2">
+
+                <section class="panel_vuelos">
+                    <article class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Hotel Melia</label>
+                            <div class="line2"></div>
+                            <section class="hoteles__box">
+                                <figure>
+                                    <img src="../img/melia.webp" alt="">
+                                </figure>
+                                <section class="hoteles__box_vertical">
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div>
+                                        <div class="box_01_escalas">
+                                            <div>$100.000</div>
+                                            <div>$450.000</div>
+                                        </div>
+                                        <label for="customRange1" class="form-label"></label>
+                                        <input type="range" class="form-range" id="customRange1">
+                                    </div>
+                                </section>
+
+                            </section>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 178.126.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>8,8</h5>
+                                </div>
+                                <div>
+                                    <h6>Excelente</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </article>
+                </section>
+                <section class="panel_vuelos">
+                    <article class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Hotel Westgate</label>
+                            <div class="line2"></div>
+                            <section class="hoteles__box">
+                                <figure>
+                                    <img src="../img/westgate.jpg" alt="">
+                                </figure>
+                                <div class="hoteles__box_vertical">
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div>
+                                        <div class="box_01_escalas">
+                                            <div>$100.000</div>
+                                            <div>$450.000</div>
+                                        </div>
+                                        <label for="customRange1" class="form-label"></label>
+                                        <input type="range" class="form-range" id="customRange1">
+                                    </div>
+                                </div>
+
+                            </section>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 163.985.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>7,8</h5>
+                                </div>
+                                <div>
+                                    <h6>Muy Bueno</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </article>
+                </section>
+                <section class="panel_vuelos">
+                    <article class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Hotel Holliday In</label>
+                            <div class="line2"></div>
+                            <section class="hoteles__box">
+                                <figure>
+                                    <img src="../img/hollidayin.webp">
+                                </figure>
+                                <div class="hoteles__box_vertical">
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div>
+                                        <div class="box_01_escalas">
+                                            <div>$100.000</div>
+                                            <div>$450.000</div>
+                                        </div>
+                                        <label for="customRange1" class="form-label"></label>
+                                        <input type="range" class="form-range" id="customRange1">
+                                    </div>
+                                </div>
+
+                            </section>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 188.236.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>8,1</h5>
+                                </div>
+                                <div>
+                                    <h6>Excelente</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </article>
+                </section>
+                <section class="panel_vuelos">
+                    <article class="box2 box_vuelos">
+                        <form class="row g-3">
+                            <label class="form-label">Hotel Marriot</label>
+                            <div class="line2"></div>
+                            <section class="hoteles__box">
+                                <figure>
+                                    <img src="../img/hotel01.jpg">
+                                </figure>
+                                <div class="hoteles__box_vertical">
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div>
+                                        <div class="box_01_escalas">
+                                            <div>$100.000</div>
+                                            <div>$450.000</div>
+                                        </div>
+                                        <label for="customRange1" class="form-label"></label>
+                                        <input type="range" class="form-range" id="customRange1">
+                                    </div>
+                                </div>
+
+                            </section>
+                            <div class="line2"></div>
+                            <div class="col-md-12 ">
+                                <button class="btn btn-success boton vuelos" type="submit">Ver más opciones</button>
+                            </div>
+                        </form>
+                    </article>
+                    <article class="box1 box_vuelos">
+                        <form class="row g-3">
+                            <p>Precio Final</p>
+                            <h3><span class="span_75">$</span><b> 162.742.-</b></h3>
+                            <p class="span_75">Incluye Impto. PAIS y Percepción RG4815</p>
+                            <div class="line2"></div>
+                            <p class="span_75">Con Pasaporte Viajemos
+                                Sumarías 1.617 puntos</p>
+                            <div class="line2"></div>
+                            <div class="calificacion">
+                                <div>
+                                    <h5>7,2</h5>
+                                </div>
+                                <div>
+                                    <h6>Muy Bueno</h6>
+                                </div>
+                            </div>
+                            <div class="line2"></div>
+                        </form>
+                    </article>
+                </section>
+
+
+            </section>
+        </section>
+        <div class="line3"></div>
+        <div class="_paralax_ package_page"></div>
+        <div class="line3"></div>
+        <section class="wrapper_vertical">
+            <h3>Paquetes turísticos baratos ¡La mejor opcion para tus vacaciones!</h3>
+            <article class="wrapper_vertical__02">
+                <p>Los paquetes turísticos 2020 en Argentina son tu puerta de entrada para vivir las mejores vacaciones.
+                    En
+                    <b>Viajemos.com</b> tenemos la variedad más grande de paquetes de viaje para vos, combinando los
+                    vuelos más
+                    baratos, la mejor selección de hoteles y todo lo que necesitas para tener una experiencia completa.
+                    ¿Qué
+                    estás esperando para hacer realidad el viaje de tus sueños con estos paquetes baratos? Al comprar
+                    tus
+                    paquetes turísticos podés conseguir muy buenos descuentos, porque al sumar un hotel o auto vas a
+                    obtener
+                    un descuento significativo en su valor. ¡Comprar tus viajes en paquetes siempre te va a resultar más
+                    barato! También podés sumar productos adicionales a tu paquete turístico, además de vuelo, hotel y
+                    alquiler de autos, como traslados desde el aeropuerto y actividades para hacer en tu destino. Y en
+                    cada
+                    instancia de tu compra podés ajustar tu paquete a tus necesidades. En <b>Viajemos.com</b> podés
+                    encontrar paquetes
+                    en oferta a un gran abanico de destinos de todo el mundo. Tanto si preferís pasar tus vacaciones en
+                    la
+                    playa con un paquete all inclusive, en la montaña o en las ciudades más cosmopolitas, acá tenemos lo
+                    que
+                    estás buscando. Descubrí el lugar de tus futuras vacaciones con nuestros paquetes de viajes y
+                    aprovechá
+                    las mejores ofertas. ¡Hacé ya mismo tus reservas de paquetes turísticos en Argentina a los precios
+                    más
+                    económicos y pagalos en cómodas cuotas!!
+                </p>
+            </article>
+        </section>
+        <div class="line3"></div>
+        <section class="wrapper_vertical">
+            <h3>Ofertas exclusivas en tu email</h3>
+            <article>
+                <section class="mb-3 wrapper_vertical__01">
+                    <div><i class='bx bx-mail-send'></i></div>
+                    <div><input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Ingresa tu email"></div>
+                    <div class="col-12">
+                        <button class="btn btn-success boton ofertas_paquetes" type="submit">¡Quiero
+                            recibirlas!</button>
+                    </div>
+                </section>
+            </article>
+            <article>
+                <p>Recibirás emails promocionales de <b>Viajemos.com</b> Para más información consultá las políticas de
+                    privacidad.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <div class="flex_box__content_evenly contactame">
+            <div class="contactame_iconos_social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-whatsapp'></i>
+                <i class='bx bx-mail-send'></i>
+            </div>
+            <div class="contactame_listado">
+                <ul>
+                    <li>contacto@viajemos.com <i class='bx bx-mail-send'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bxl-whatsapp'></i></li>
+                    <li>+54 9 11 2222 3333 <i class='bx bx-phone'></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="titulo-final">
+            <p>
+                &copy; 2022 - Copyright by Alejandro Di Stefano &#xae; - Todos los derechos Reservados
+            </p>
+            <p>
+                Desarrollo Web - CODERHOUSE
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

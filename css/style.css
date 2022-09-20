@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* NavBar */
+
+nav ul li {
+    display: inline-block;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    padding: 5px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+nav ul li:hover {
+    background-color: #017a7eaf;
+    border-radius: 8px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #004848;
+    font-weight: bolder;
+}
+
+ul a:hover {
+    color: #faf4f4;
+}
+
+.marca,
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.marca img {
+    width: 450px;
+}
+
+/* Fin NavBar */
+
+/* Body */
+
+.line {
+    width: 100%;
+    margin: 0 auto;
+    height: 5px;
+    background: #004848;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.line2 {
+    width: 90%;
+    margin: 10px auto;
+    height: 1px;
+    background: #004848;
+}
+
+.line3 {
+    width: 99%;
+    margin: 50px 0;
+    height: 1px;
+    background: #004848;
+}
+
+._paralax_ {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.index_page {
+    background-image: linear-gradient(to top, #e2e2e291 0%, #8787870d 100%), url(../img/orlando02.jpg);
+}
+
+.fly_page {
+    background-image: linear-gradient(to top, #e2e2e291 0%, #8787870d 100%), url(../img/orlando-atracciones.jpg);
+}
+
+.package_page {
+    background-image: linear-gradient(to top, #e2e2e291 0%, #8787870d 100%), url(../img/resorts01.jpg);
+}
+
+.disney_page {
+    height: 80vh;
+    background-image: linear-gradient(to top, #e2e2e291 0%, #8787870d 100%), url(../img/disney03.png);
+}
+
+.bienvenido h1 {
+    text-align: center;
+}
+
+.bienvenido_busqueda_rapida {
+    padding: 3%;
+}
+
+.flex_box__content_evenly {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex_box__content_between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenido_busqueda_rapida_box {
+    flex-wrap: wrap;
+}
+
+.bienvenido_busqueda_rapida_01 {
+    margin: 0% 10% 2% 10%;
+}
+
+.bienvenido_busqueda_rapida_01 h3 {
+    padding: 3%;
+}
+
+.bienvenido__box_small {
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2%;
+}
+
+.bienvenido__box_small,
+.bienvenido__box_small_01 {
+    border: 1px solid #004848;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #979797;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bienvenido__box_small_01 {
+    margin: 1%;
+}
+
+.bienvenido__box_small:hover {
+    box-shadow: none;
+}
+
+.bienvenido__box_small_01:hover {
+    box-shadow: none;
+}
+
+.bienvenido__box_small img,
+.bienvenido__box_small_01 img {
+    width: 300px;
+    height: 200px;
+}
+
+.bienvenido__box_small_text {
+    flex-direction: column;
+    padding: 5%;
+}
+
+.wrapper {
+    display: flex;
+    margin: 5% 10%;
+}
+
+.box1 {
+    width: 20%;
+    display: inline-block;
+}
+
+.box2 {
+    width: 80%;
+    padding: 1%;
+}
+
+.vuelos_aeropuerto,
+.wrapper_disney {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vuelos_aeropuerto__item {
+    text-align: left;
+    width: 150px;
+}
+
+.vuelos_aeropuerto__item img {
+    height: 24px;
+}
+
+.panel_vuelos {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+
+.span_75 {
+    font-size: 65%;
+}
+
+.wrapper_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.wrapper_vertical__01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper_vertical__01 div {
+    padding: 10px;
+}
+
+.wrapper_vertical__01 input {
+    width: 400px;
+}
+
+.wrapper_vertical__01 i {
+    font-size: 48px;
+    color: #004848;
+}
+
+.textos_finales {
+    padding: 40px;
+}
+
+.textos_finales h5 {
+    font-weight: bold;
+}
+
+.wrapper_vertical__02 {
+    text-align: justify;
+    margin: 2% 15%;
+}
+
+.wrapper__paquetes {
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wrapper_disney {
+    margin: 5%;
+    padding: 1%;
+    align-items: center;
+}
+
+.wrapper_disney_01 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.wrapper_disney_entradas {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20%;
+}
+
+.wrapper_disney_entradas h4 {
+    margin: 50px 20px;
+}
+
+.wrapper_disney_entradas h5 {
+    font-size: 12px;
+}
+
+.wrapper_disney_entradas h6 {
+    font-size: 10px;
+}
+
+.wrapper_disney_entradas span {
+    font-weight: bolder;
+    color: #004848;
+}
+
+.wrapper_disney_entradas__01 {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_disney_entradas__01 div {
+    padding: 8px;
+}
+
+.box__03_disney,
+.box__04_disney {
+    margin: 0 20px;
+}
+
+.wrapper_disney_entradas_row {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid #004848;
+    border-radius: 20px;
+}
+
+.wrapper_disney_entradas_row button {
+    width: 260px;
+}
+
+.entrada_color h6 {
+    color: #004848;
+    font-weight: bold;
+}
+
+.row_entradas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.row_entradas h3 {
+    font-size: 25px;
+}
+
+.row_entradas_disney {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+    flex-wrap: wrap;
+}
+
+.wrapper_disney_entradas_row {
+    margin: 2% 0 10%;
+}
+
+.wrapper_disney_entradas_row p {
+    font-size: 12px;
+}
+
+.wrapper_disney_entradas_row .box_1 {
+    margin: 5px;
+}
+
+.box_disney {
+    border: 1px solid #004848;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #979797;
+    padding: 20px;
+}
+
+.box_disney .col-md-12 button {
+    width: 170px;
+}
+
+.box_1 span {
+    font-size: 60%;
+}
+
+.box__04_disney {
+    padding: 1%;
+    width: 250px;
+}
+
+.box__04_disney button {
+    width: 200px;
+}
+
+.paquetes__box {
+    width: 450px;
+    border: 1px solid #004848;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #979797;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 5%;
+    margin-top: 20px;
+}
+
+.paquetes__box_img img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.box__03 {
+    width: 60%;
+}
+
+.box__04 {
+    width: 40%
+}
+
+.box__04_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box__04_img img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.box__04_img img:hover {
+    filter: grayscale(0.6);
+}
+
+.box__03_img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.box__03_img img {
+    width: 350px;
+    margin: 2%;
+    cursor: pointer;
+    border: 1px solid #004848;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #979797;
+}
+
+.box__03_img img:hover {
+    box-shadow: none;
+}
+
+.box__03 h6 {
+    font-weight: bold;
+}
+
+.hoteles__box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hoteles__box img {
+    width: 300px;
+}
+
+/* Fin Body */
+
+/* Formularios */
+
+.bienvenido_formulario,
+.formulario {
+    margin: 2% 5% 0 5%;
+    padding: 2%;
+    background-color: #40839341;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #958b8b;
+}
+
+.bienvenido_formulario label {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.formulario {
+    margin: 2% 15% 5% 15%;
+}
+
+aside div {
+    margin-top: 10px;
+}
+
+.vuelos_formulario {
+    border: 1px solid #004848;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+}
+
+.origenes {
+    display: flex;
+    align-items: center;
+}
+
+.origenes i {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.vuelos_formulario h4 {
+    text-align: center;
+}
+
+.vuelos_formulario .vuelos {
+    width: 100%;
+    align-items: center;
+}
+
+.boton {
+    height: 40px;
+    width: 100%;
+    max-width: 320px;
+    background-color: #0a8a8a;
+    color: #e7e7e7;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px #958b8b;
+    margin: 5% 0;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #20966f;
+    box-shadow: none;
+}
+
+.ofertas_paquetes {
+    padding: 0 20px;
+}
+
+.box_vuelos {
+    border: 0.5px solid #000;
+    padding: 3%;
+}
+
+.calificacion {
+    display: block;
+    margin: auto;
+}
+
+.calificacion h5 {
+    background: #004848;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    color: #e7e7e7;
+    margin-bottom: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.calificacion h6 {
+    margin-bottom: 0;
+    color: #004848;
+    margin-top: 15px;
+}
+
+.aside__box_1 {
+    margin: 50px 0;
+}
+
+.box_01_escalas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box_01_escalas .escalas input {
+    width: 50px;
+    height: 30px;
+}
+
+/* Fin Formularios */
+
+/* Footer */
+
+footer {
+    background-color: #017a7eaf;
+    border-radius: 30px 30px 0 0;
+    box-shadow: 3px 0 8px #004848;
+}
+
+.contactame {
+    padding: 2%;
+}
+
+.contactame_iconos_social {
+    font-size: 48px;
+    cursor: pointer;
+    color: #faf4f4;
+}
+
+.contactame_iconos_social i:hover {
+    color: #f6c487;
+}
+
+.contactame_listado {
+    text-align: right;
+    font-size: 22px;
+    cursor: pointer;
+    color: #faf4f4;
+}
+
+.contactame_listado ul li:hover {
+    color: #f6c487;
+}
+
+.titulo-final {
+    text-align: center;
+    padding: 1%;
+}
+
+.titulo-final p {
+    cursor: pointer;
+    color: #faf4f4;
+}
+
+/* Fin Footer */
+
+/* Responsive - Breakpoint */
+
+@media (max-width:1200px) {
+
+    .flex_box__content_between {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper {
+        display: flex;
+        margin: 5%;
+    }
+
+    .box1,
+    .box2 {
+        width: 100%;
+    }
+
+    .panel_vuelos {
+        display: flex;
+        margin: 0 0 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .wrapper_disney {
+        flex-wrap: wrap;
+    }
+
+    .box__04_img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .bienvenido_busqueda_rapida_box {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 4fr;
+        gap: 10px;
+        justify-items: center;
+        grid-template-areas:
+            "box01"
+            "box02"
+            "box03"
+            "box04";
+    }
+
+    .caja01 {
+        grid-area: box01;
+    }
+    .caja02 {
+        grid-area: box02;
+    }
+    .caja03 {
+        grid-area: box03;
+    }
+    .caja04 {
+        grid-area: box04;
+    }
+    
+}
+
+@media (max-width:576px) {
+    .marca img {
+        width: 200px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_box__content_between {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 400px;
+        align-content: center;
+    }
+
+    .bienvenido__box_small {
+        width: 300px;
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex_box__content_evenly {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .bienvenido__box_small_01 {
+        margin-top: 20px;
+    }
+
+    .titulo-final p {
+        font-size: 12px;
+    }
+
+    .contactame_iconos_social {
+        font-size: 36px;
+    }
+
+    .contactame_listado {
+        font-size: 18px;
+    }
+
+    .formulario {
+        margin: 3% 5% 5% 5%;
+    }
+
+    .wrapper {
+        display: flex;
+        margin: 5% 10%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1,
+    .box2,
+    .box__03,
+    .box__04 {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .panel_vuelos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper_vertical__01 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .boton {
+        max-width: 100%;
+    }
+
+    .wrapper__paquetes {
+        padding: 5%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .paquetes__box {
+        width: 100%;
+    }
+
+    .hoteles__box {
+        flex-direction: column;
+    }
+
+    article p,
+    .wrapper_vertical h3 {
+        padding: 0 5%;
+        text-align: left;
+    }
+
+    .wrapper_disney {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        border: 0;
+        width: 400px;
+        height: 300px;
+    }
+
+    .box__04_img img {
+        width: 400px;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .wrapper_disney_01 {
+        display: flex;
+        margin-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper_disney_entradas__01 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+}
